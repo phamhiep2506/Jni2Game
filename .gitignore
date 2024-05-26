@@ -1,2 +1,2 @@
-libs
-obj
+src/jni/libs
+src/jni/obj
