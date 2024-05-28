@@ -1,4 +1,4 @@
-ROOT_DIR = $(dir $(abspath $(firstword $(MAKEFILE_LIST))))
+ROOT_DIR =  $(shell pwd)
 
 NDK_VERSION = 26.3.11579264
 
@@ -11,7 +11,7 @@ build:
 		NDK_APPLICATION_MK=$(ROOT_DIR)/src/jni/Application.mk
 
 clean:
-	rm -rf libs obj
+	rm -rf $(ROOT_DIR)/src/jni/libs $(ROOT_DIR)/src/jni/obj
 
 debug:
 	$(ANDROID_HOME)/platform-tools/adb \

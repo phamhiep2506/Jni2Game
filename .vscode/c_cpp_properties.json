@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/android_sdk/ndk/26.3.11579264/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include"
+                "/opt/android_sdk/ndk/26.3.11579264/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include",
+                "${workspaceFolder}/libs/libevdev/libevdev"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
